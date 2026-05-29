@@ -16,11 +16,18 @@ def Area():
     width = float(input("Width = "))
     print(f"Area = {length + width}")
 
+def FullName():
+    name = input("Name: ")
+    last_name = input("Last name: ")
+    print(f"Your full name is {name + ' ' + last_name}")
+
+
 tasks = {
     "1" : Greeting,
     "2" : Age,
     "3" : Sum,
-    "4" : Area
+    "4" : Area,
+    "5" : FullName
 }
 
 while True:
@@ -29,6 +36,7 @@ while True:
     print("2 - Age")
     print("3 - Sum")
     print("4 - Area")
+    print("5 - Full name")
     print("0 - Exit")
 
     choise = input("Choose the function: ")
