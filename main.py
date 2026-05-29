@@ -24,6 +24,15 @@ def FullName():
 def isAdult():
     age = int(input("Your age: "))
     print(bool(age>=18))
+
+def Average():
+    num = int(input("Enter number of numbers: "))
+    sum = 0
+    for n in range(num):
+        number = float(input(f"Number {n + 1}:"))
+        sum = sum + number
+    print(f"Average = {sum/num}")
+
         
 
 
@@ -33,7 +42,8 @@ tasks = {
     "3" : Sum,
     "4" : Area,
     "5" : FullName,
-    "6" : isAdult
+    "6" : isAdult,
+    "7" : Average
 }
 
 while True:
@@ -44,6 +54,7 @@ while True:
     print("4 - Area")
     print("5 - Full name")
     print("6 - Is adult")
+    print("7 - Average")
     print("0 - Exit")
 
     choise = input("Choose the function: ")
