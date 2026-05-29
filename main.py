@@ -21,13 +21,19 @@ def FullName():
     last_name = input("Last name: ")
     print(f"Your full name is {name + ' ' + last_name}")
 
+def isAdult():
+    age = int(input("Your age: "))
+    print(bool(age>=18))
+        
+
 
 tasks = {
     "1" : Greeting,
     "2" : Age,
     "3" : Sum,
     "4" : Area,
-    "5" : FullName
+    "5" : FullName,
+    "6" : isAdult
 }
 
 while True:
@@ -37,6 +43,7 @@ while True:
     print("3 - Sum")
     print("4 - Area")
     print("5 - Full name")
+    print("6 - Is adult")
     print("0 - Exit")
 
     choise = input("Choose the function: ")
